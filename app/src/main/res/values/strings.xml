@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Sinau Aksara Jawa</string>
+    <string name="selamat_datang">Sugeng Rawuh</string>
+
+    <!--Menu Activity-->
+    <string name="mea_app_title">Sinau Aksara Jawa</string>
+    <string name="mea_menu_sinau_nulis">Sinau Nulis</string>
+    <string name="mea_menu_kuis">Kuis</string>
+    <string name="mea_menu_tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="mea_menu_tambah_data">Tambah Data</string>
+
+    <!--Add Data Training Activity-->
+    <string name="string_adta_nambahi_data">Nambahi Data</string>
+
+    <!--Learn Aksara Activity-->
+    <string name="string_ala_btn_sampun">Sampun</string>
+
+    <!--Quiz Activity-->
+    <string name="string_qa_tv_title_command">Pilihen jawaban sing ko anggep bener!</string>
+
+    <!--Dialog Add Data Fragment-->
+    <string name="string_fdaa_btn_repeat">Baleni</string>
+    <string name="string_fdaa_btn_change_item">Ganti Aksara Liyane</string>
+
+    <!--Dialog Quiz result Fragment-->
+    <string name="string_dqrf_skor">Skormu</string>
+    <string name="string_dqrf_btn_back_to_menu">Mbalek ning menu</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/hi_ll_group_hanacaraka">
+
+    <TextView
+            android:id="@+id/hi_tv_aksara_jawa"
+            style="@style/style_hi_tv_aksara_jawa"
+            tools:text="a"/>
+
+    <TextView
+            android:id="@+id/hi_tv_aksara_jawa_latin"
+            style="@style/style_hi_tv_aksara_jawa_latin"
+            tools:text="HA"/>
+
+</LinearLayout>

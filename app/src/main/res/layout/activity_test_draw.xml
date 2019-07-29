@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.TestDrawActivity">
+
+    <com.raed.drawingview.DrawingView
+            android:id="@+id/drawing_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            app:brush="air_brush"
+            app:brush_size="1"
+            app:drawing_background_color="@color/colorPrimary"/>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/image_result"/>
+
+    <ImageView
+            android:id="@+id/image_edge_detection"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+
+</LinearLayout>

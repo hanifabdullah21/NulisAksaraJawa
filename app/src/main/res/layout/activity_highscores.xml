@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/jungle_dua"
+        tools:context=".activity.HighscoresActivity">
+
+    <TextView
+            android:id="@+id/hia_tv_title"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftar Ranking Paling Dhuwur"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_16sdp"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:visibility="gone"
+            android:layout_below="@id/hia_tv_title"
+            android:id="@+id/hia_rv_highscore"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <com.airbnb.lottie.LottieAnimationView
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:id="@+id/hia_lottie_loading"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_200sdp"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="loading_pencil.json"/>
+
+</RelativeLayout>

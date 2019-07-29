@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="pixel_height">32dip</dimen>
+    <dimen name="pixel_width">32dip</dimen>
+    <dimen name="image_inset">8dip</dimen>
+
+</resources>

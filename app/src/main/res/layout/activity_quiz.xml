@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/jungle_dua"
+        tools:context=".activity.QuizActivity">
+
+    <TextView
+            android:layout_alignParentTop="true"
+            android:id="@+id/qa_tv_skor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Skor: 90"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/colorWhite"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+    <TextView
+            android:layout_alignParentTop="true"
+            android:id="@+id/qa_tv_name"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:textColor="@color/colorWhite"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+
+    <LinearLayout
+            android:id="@+id/qa_ll_question_aksara"
+            style="@style/style_qa_ll_question_aksara"
+            android:layout_below="@id/qa_tv_skor">
+
+        <TextView
+                android:id="@+id/qa_tv_aksara"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_margin="@dimen/_10sdp"
+                tools:text="a"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/_90sdp"
+                android:fontFamily="@font/hanacaraka"/>
+
+        <TextView
+                android:id="@+id/qa_tv_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Aksara apa iku?"
+                android:gravity="center"
+                android:background="@color/cokelatTua"
+                android:textSize="@dimen/_12sdp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/qa_ll_choice_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#9AFFFFFF"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp"
+            android:layout_below="@id/qa_ll_question_aksara">
+
+        <TextView
+                android:id="@+id/qa_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:gravity="center_vertical"
+                android:text="@string/string_qa_tv_title_command"
+                android:fontFamily="sans-serif"/>
+
+        <RadioGroup
+                android:id="@+id/qa_rg_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_10sdp">
+
+            <RadioButton
+                    android:id="@+id/qa_rb_answer1"
+                    style="@style/style_qa_rb_answer"
+                    tools:text="Jawaban 1"/>
+
+            <RadioButton
+                    android:id="@+id/qa_rb_answer2"
+                    style="@style/style_qa_rb_answer"
+                    tools:text="Jawaban 1"/>
+
+            <RadioButton
+                    android:id="@+id/qa_rb_answer3"
+                    style="@style/style_qa_rb_answer"
+                    tools:text="Jawaban 1"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <FrameLayout
+            android:visibility="gone"
+            android:id="@+id/qa_fr_animation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlackOpacity155">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessParent">
+
+            <TextView
+                    android:id="@+id/qa_tv_result_answer"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Jawabanmu Bener !!"
+                    android:textSize="@dimen/_20sdp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_centerHorizontal="true"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/qa_lottie_animation_answer"
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="@dimen/_250sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_below="@id/qa_tv_result_answer"
+                    android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

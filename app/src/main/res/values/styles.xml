@@ -1,0 +1,167 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/customDefaultTextViewStyle</item>
+    </style>
+
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/customDefaultTextViewStyle</item>
+    </style>
+
+    <style name="customDefaultTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/jawapalsu</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <!-- ***********************************************************************************************************8  -->
+
+    <!--MenuActivity-->
+
+    <!--Style dari Linear Layout yang berisi gambar dan judul menu-->
+    <style name="mea_ll_group_menu">
+        <item name="android:layout_height">@dimen/_120sdp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--Style dari Imageview logo menu-->
+    <style name="mea_iv_menu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_100sdp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--Style dari TextView judul teks menu-->
+    <style name="mea_tv_menu_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+
+    <!--ItemHanacaraka-->
+
+    <!--Style dari Linear Layout yang berisi item huruf aksara jawa-->
+    <style name="hi_ll_group_hanacaraka">
+        <item name="android:layout_height">@dimen/_65sdp</item>
+        <item name="android:layout_width">@dimen/_50sdp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">@dimen/_2sdp</item>
+    </style>
+
+    <!--Style dari TextView yang berisi huruf aksara jawa-->
+    <style name="style_hi_tv_aksara_jawa">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_50sdp</item>
+        <item name="android:textSize">@dimen/_24sdp</item>
+        <item name="android:fontFamily">@font/hanacaraka</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/cokelatMuda</item>
+    </style>
+
+    <!--Style dari TextView yang berisi huruf aksara jawa latin-->
+    <style name="style_hi_tv_aksara_jawa_latin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_20sdp</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/cokelatTua</item>
+    </style>
+
+    <!--AddDataTrainingActivity-->
+
+    <!--Style dari Linear Layout yang berisi item huruf aksara jawa-->
+    <style name="style_adta_ll_group_hanacaraka">
+        <item name="android:layout_height">@dimen/_80sdp</item>
+        <item name="android:layout_width">@dimen/_60sdp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">@dimen/_2sdp</item>
+    </style>
+
+    <!--Style dari TextView yang berisi huruf aksara jawa-->
+    <style name="style_adta_tv_aksara_jawa">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_60sdp</item>
+        <item name="android:textSize">@dimen/_28sdp</item>
+        <item name="android:fontFamily">@font/hanacaraka</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/cokelatMuda</item>
+    </style>
+
+    <!--Style dari TextView yang berisi huruf aksara jawa latin-->
+    <style name="style_adta_tv_aksara_jawa_latin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_20sdp</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/cokelatTua</item>
+    </style>
+
+    <!--style dari TextView yang berisi judul halaman/activity-->
+    <style name="style_adta_tv_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/string_adta_nambahi_data</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+    </style>
+
+    <!--style dari TextView yang berisi informasi jumlah total data semua, total data 'true' dan total data 'false'-->
+    <style name="style_adta_tv_information_total_data">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:layout_marginLeft">@dimen/_10sdp</item>
+    </style>
+
+    <style name="style_adta_iv_action">
+        <item name="android:layout_width">@dimen/_24sdp</item>
+        <item name="android:layout_height">@dimen/_24sdp</item>
+        <item name="android:layout_marginRight">@dimen/_5sdp</item>
+        <item name="android:layout_marginTop">@dimen/_5sdp</item>
+    </style>
+
+    <!--LearnAksaraActivity-->
+
+    <style name="style_ala_iv_action">
+        <item name="android:layout_width">@dimen/_24sdp</item>
+        <item name="android:layout_height">@dimen/_24sdp</item>
+        <item name="android:layout_marginRight">@dimen/_5sdp</item>
+        <item name="android:layout_marginTop">@dimen/_5sdp</item>
+    </style>
+
+    <!--Quiz Activity-->
+
+    <!--Style yang digunakan untuk mengatur Linear Layout pertanyaan2-->
+    <style name="style_qa_ll_question_aksara">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/_10sdp</item>
+        <item name="android:background">@color/cokelatMuda</item>
+    </style>
+
+    <!--Style yang digunakan untuk mengatur radio button pilihan jawaban-->
+    <style name="style_qa_rb_answer">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:layout_marginTop">@dimen/_5sdp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_30sdp</item>
+    </style>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/jungle_satu"
+             tools:context=".fragment_dialog.DialogQuizResultFragment">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="UselessParent">
+
+        <TextView
+                android:id="@+id/dqrf_tv_title"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_dqrf_skor"
+                android:textSize="@dimen/_28sdp"
+                android:layout_centerHorizontal="true"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/dqrf_lottie_animation"
+                android:layout_centerInParent="true"
+                app:lottie_loop="true"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_height="@dimen/_200sdp"/>
+
+        <TextView
+                android:id="@+id/dqrf_tv_skor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_48sdp"
+                tools:text="90"
+                android:textColor="@color/colorWhite"
+                android:layout_centerHorizontal="true"
+                android:layout_alignTop="@id/dqrf_lottie_animation"/>
+
+        <Button
+                android:id="@+id/dqrf_btn_back_to_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_dqrf_btn_back_to_menu"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/dqrf_lottie_animation"
+                android:layout_marginTop="@dimen/_20sdp"/>
+
+    </RelativeLayout>
+
+</FrameLayout>
